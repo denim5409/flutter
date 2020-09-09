@@ -32,7 +32,6 @@ class MyPage extends StatelessWidget {
 
             //가로방향으로 꽉 붙이기
             crossAxisAlignment: CrossAxisAlignment.stretch,
-
             children: <Widget>[
               Container(
                 // width: 100,
@@ -57,10 +56,12 @@ class MyPage extends StatelessWidget {
                 child: Text('Container 3'),
               ),
 
-              //오른쪽 끝점으로 정렬
+              //오른쪽 끝점으로 정렬//
               // Container(
               //   width: double.infinity,
               //   height: 20,
+              /////////////////////////
+
               // ),
             ],
           ),
@@ -70,7 +71,5 @@ class MyPage extends StatelessWidget {
     );
   }
 }
-
-
 //레이아웃 공부 사이트 :
 // https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e

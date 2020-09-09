@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// Snack Bar는 하단에 나오는 메세지 창
 class MyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,15 +25,21 @@ class MyPage extends StatelessWidget {
           elevation: 0.0,
         ),
         body: Builder(
+          //Builder를 사용하여 snack bar를 구현함.
           builder: (BuildContext ctx) {
+            //snack bar는 상단의 BuildContext를 참조함.
             return Center(
+              //Center 함수를 리턴함
               child: FlatButton(
+                // 납작한 버튼 삽입
                 onPressed: () {
                   Scaffold.of(ctx).showSnackBar(SnackBar(
-                    content: Text('Hello'),
+                    //Scaffold.of(안에 상단에서 지정한 buildContext의 인스턴스 지정)
+                    content: Text('Hello'), //눌렀을때 나오는 항목 지정
                   ));
                 },
                 child: Text(
+                  //플랫버튼안에 내용 작성
                   'Show me',
                   style: TextStyle(color: Colors.white),
                 ),
